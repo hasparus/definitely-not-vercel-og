@@ -1,6 +1,6 @@
 {
   "name": "@hasparus/definitely-not-vercel-og",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "@vercel/og 1.0.3 rebuilt against current satori",
   "repository": {
     "type": "git",
