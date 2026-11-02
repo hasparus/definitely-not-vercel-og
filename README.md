@@ -7,9 +7,6 @@ the same API. Differences:
   bundled copy fails on import in Node (`Dynamic require of "fs"`, missing
   `hb.wasm`, see [vercel/satori#801](https://github.com/vercel/satori/issues/801)).
 - The edge build initializes satori with `layout.wasm` instead of `yoga.wasm`.
-- `sharp` is an optional peer dependency instead of an optional dependency, so
-  it's only used when the app already has it, and file tracers don't pull it
-  into edge bundles.
 - `@resvg/resvg-wasm` is `^2.6.2`.
 
 The upstream README follows.
