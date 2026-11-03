@@ -99,14 +99,14 @@ By default, `@vercel/og` only has the Noto Sans font included. If you need to us
 
 ## Examples
 
-- Basic · [_source_](/examples/next/pages/api/vercel.tsx) · [_demo_](https://og-examples.vercel.sh/api/vercel)
-- Embed SVG Image · [_source_](/examples/next/pages/api/image-svg.tsx) · [_demo_](https://og-examples.vercel.sh/api/image-svg)
-- Dynamic PNG Image Based on URL Queries · [_source_](/examples/next/pages/api/dynamic-image.tsx) · [_demo_](https://og-examples.vercel.sh/api/dynamic-image?username=vercel)
--   Fetch External Data · [_source_](/examples/next/pages/api/external-data.tsx) · [_demo_](https://og-examples.vercel.sh/api/external-data?username=rauchg)
-- Custom Font · [_source_](/examples/next/pages/api/custom-font.tsx) · [_demo_](https://og-examples.vercel.sh/api/custom-font)
-- Emoji · [_source_](/examples/next/pages/api/emoji.tsx) · [_demo_](https://og-examples.vercel.sh/api/emoji)
-- Languages · [_source_](/examples/next/pages/api/language.tsx) · [_demo_](https://og-examples.vercel.sh/api/language)
-- Encrypted Token · [_source_](/examples/next/pages/api/encrypted.tsx) · [_demo_](https://og-examples.vercel.sh/encrypted/a)
+- Basic · [_demo_](https://og-examples.vercel.sh/api/vercel)
+- Embed SVG Image · [_demo_](https://og-examples.vercel.sh/api/image-svg)
+- Dynamic PNG Image Based on URL Queries · [_demo_](https://og-examples.vercel.sh/api/dynamic-image?username=vercel)
+-   Fetch External Data · [_demo_](https://og-examples.vercel.sh/api/external-data?username=rauchg)
+- Custom Font · [_demo_](https://og-examples.vercel.sh/api/custom-font)
+- Emoji · [_demo_](https://og-examples.vercel.sh/api/emoji)
+- Languages · [_demo_](https://og-examples.vercel.sh/api/language)
+- Encrypted Token · [_demo_](https://og-examples.vercel.sh/encrypted/a)
 
 
 ## Development / Contributing
