@@ -48,7 +48,7 @@
   },
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "build": "pnpm typecheck && tsup && node scripts/copy-assets.js",
+    "build": "pnpm typecheck && tsdown && node scripts/copy-assets.js",
     "test": "pnpm build && node scripts/test.js",
     "prepublishOnly": "pnpm test"
   },
@@ -74,7 +74,7 @@
     "@types/node": "^26",
     "@types/react": "^19",
     "publint": "^0.3.25",
-    "tsup": "^9.0.0",
+    "tsdown": "^0.23.7",
     "typescript": "^7.0.2"
   },
   "optionalDependencies": {
