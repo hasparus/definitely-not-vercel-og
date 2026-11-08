@@ -71,11 +71,11 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.5",
-    "@types/node": "^24",
+    "@types/node": "^26",
     "@types/react": "^19",
     "publint": "^0.3.25",
     "tsup": "^9.0.0",
-    "typescript": "^5.9.3"
+    "typescript": "^7.0.2"
   },
   "optionalDependencies": {
     "sharp": "^0.35.3"
