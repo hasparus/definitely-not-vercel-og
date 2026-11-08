@@ -18,7 +18,7 @@ try {
     symlinkSync(realpathSync(join('node_modules', dep)), join(root, 'node_modules', dep))
   }
   writeFileSync(join(root, 'package.json'), '{ "type": "module" }\n')
-  cpSync('test', join(root, 'test'), { recursive: true })
+  cpSync('test', join(root, 'test'), { recursive: true, filter: (path) => !path.endsWith('node_modules') })
   process.exitCode = spawnSync(process.execPath, ['--test', 'test/*.test.js'], { cwd: root, stdio: 'inherit' }).status
 } finally {
   rmSync(root, { recursive: true, force: true })
