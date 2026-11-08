@@ -111,13 +111,9 @@ By default, `@hasparus/definitely-not-vercel-og` only has the Geist font include
 
 ## Development / Contributing
 
-### Playground
-  - `pnpm i` inside the `playground/` directory
-  - `pnpm dev` to start the Next.js app
-
-### Package
-  - `pnpm i` inside the root directory
-  - `pnpm build` to build the library
+- `pnpm i` to install
+- `pnpm build` to build the library
+- `pnpm test` to render with the built Node and edge entries (Node 22.15+)
 
 ## Acknowledgements
 
