@@ -49,8 +49,7 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "build": "pnpm typecheck && tsup && node scripts/copy-assets.js",
-    "test": "node scripts/test.js",
-    "prepack": "pnpm build",
+    "test": "pnpm build && node scripts/test.js",
     "prepublishOnly": "pnpm test"
   },
   "keywords": [
@@ -71,8 +70,10 @@
     "satori": "^0.63.2"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.5",
     "@types/node": "^24",
     "@types/react": "^19",
+    "publint": "^0.3.25",
     "tsup": "^9.0.0",
     "typescript": "^5.9.3"
   },
