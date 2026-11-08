@@ -113,7 +113,7 @@ By default, `@hasparus/definitely-not-vercel-og` only has the Geist font include
 
 - `pnpm i` to install
 - `pnpm build` to build the library
-- `pnpm test` to build, pack, and render with the packed Node and edge entries (Node 22.15+)
+- `pnpm test` to build, pack, and render with the packed Node and edge entries (Node 22.19+)
 
 ## Acknowledgements
 
