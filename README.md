@@ -52,12 +52,12 @@ Read more about the API, supported features and check out the examples in the fo
 
 ## API Reference
 
-`@vercel/og` supports both [Node.js Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/node-js) and [Edge Runtime](https://vercel.com/docs/concepts/functions/edge-functions/edge-runtime).
+`@hasparus/definitely-not-vercel-og` supports both the [Node.js runtime](https://vercel.com/docs/functions/runtimes/node-js) and the [Edge runtime](https://vercel.com/docs/functions/runtimes/edge).
 
 The package exposes an `ImageResponse` constructor, with the following options available:
 
 ```jsx
-import { ImageResponse } from '@vercel/og'
+import { ImageResponse } from '@hasparus/definitely-not-vercel-og'
 
 // ...
 new ImageResponse(
@@ -82,7 +82,7 @@ new ImageResponse(
 )
 ```
 
-When running in production, these headers will be included by `@vercel/og`:
+When running in production, these headers will be included by `@hasparus/definitely-not-vercel-og`:
 
 ```jsx
 'content-type': 'image/png',
@@ -95,7 +95,7 @@ During development, the `cache-control: no-cache, no-store` header is used inste
 
 Please refer to [Satori’s documentation](https://github.com/vercel/satori#documentation) for a list of supported HTML and CSS features.
 
-By default, `@vercel/og` only has the Noto Sans font included. If you need to use other fonts, you can pass them in the `fonts` option. Check the **Custom Font** example below for more details.
+By default, `@hasparus/definitely-not-vercel-og` only has the Geist font included. If you need to use other fonts, you can pass them in the `fonts` option. Check the **Custom Font** example below for more details.
 
 ## Examples
 
@@ -111,13 +111,9 @@ By default, `@vercel/og` only has the Noto Sans font included. If you need to us
 
 ## Development / Contributing
 
-### Playground
-  - `pnpm i` inside the `playground/` directory
-  - `pnpm dev` to start the Next.js app
-
-### Package
-  - `pnpm i` inside the root directory
-  - `pnpm build` to build the library
+- `pnpm i` to install
+- `pnpm build` to build the library
+- `pnpm test` to build, pack, lint the tarball, and render with its Node and edge entries (Node 22.19+)
 
 ## Acknowledgements
 
