@@ -1,8 +1,5 @@
 import assert from 'node:assert/strict'
-import { tmpdir } from 'node:os'
 import sharp from 'sharp'
-
-process.chdir(tmpdir())
 
 const element = {
   type: 'div',
@@ -14,6 +11,8 @@ export async function render() {
   const response = new ImageResponse(element, { width: 600, height: 300 })
   assert.equal(response.headers.get('content-type'), 'image/png')
   const png = Buffer.from(await response.arrayBuffer())
+  // sharp's cache stays empty until it processes an image, so check it before
+  // decoding the result with sharp below.
   const usedSharp = sharp.cache().items.current > 0
 
   const { data, info } = await sharp(png).raw().toBuffer({ resolveWithObject: true })

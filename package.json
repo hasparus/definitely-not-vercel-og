@@ -49,8 +49,9 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "build": "pnpm typecheck && tsup && node scripts/copy-assets.js",
-    "test": "node scripts/pack-for-test.js && node --test test/*.test.js",
-    "prepublishOnly": "pnpm build && pnpm test"
+    "test": "node scripts/test.js",
+    "prepack": "pnpm build",
+    "prepublishOnly": "pnpm test"
   },
   "keywords": [
     "open graph image",
